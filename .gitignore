@@ -1,0 +1,6 @@
+.pabotsuitenames
+
+__pycache__/
+
+venv/
+results
