@@ -19,9 +19,12 @@ pip install --upgrade robotframework-seleniumlibrary
 pip install -U robotframework-pabot
 ```
 
-## 4. Exécuter un test avec un tag
-`robot -i "nom de tag" -d results .`
+## 4. Exécuter les tests en fonction de leurs tags
+`robot -i "tags à inclure" -e "tags à exclure" -d results .`
 
-## 5. Exécuter les tests en parallèle 
+## 5. Exécuter les tests en parallèle avec pabot
 `pabot --testlevelsplit --processes 8 -d results .`
 
+## 6. Spécifier le navigateur à utiliser
+Par defaut, le navigateur utilisé est chrome mais il peut être changé depuis la ligne de commande  
+`robot --variable BROWSER:edge -d results .`
